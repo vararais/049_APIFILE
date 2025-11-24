@@ -1,5 +1,8 @@
 const express = require('express');
 const connectDatabase = require('./config/db');
+const apiRoute = require('./routes/api');
+
+app.use('/api/v1', apiRoute);
 
 const app = express();
 const PORT = 3000;
